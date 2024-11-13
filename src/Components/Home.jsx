@@ -21,13 +21,13 @@ const Home = () => {
             const json = await data.json()
 
             setResData(json)
-            // console.log(json)
+            console.log(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants)
 
-            setRecommendations(json.data.cards[0].card.card.imageGridCards.info)
+            // setRecommendations(json.data.cards[0].card.card.imageGridCards.info)
             // console.log(json.data.cards[0].card.card.imageGridCards.info)
 
 
-            setMainRestaurants(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants)
+            setMainRestaurants(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants)
             // console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants)
         }
 
@@ -40,8 +40,8 @@ const Home = () => {
 
     <div>
 
-
-{
+s
+{/* {
   recommendations && (
     <div className="my-8 p-4 bg-gray-100 rounded-lg shadow-lg">
       <h1 className="text-2xl font-bold text-gray-800 mb-6 text-center">
@@ -50,7 +50,7 @@ const Home = () => {
       <IconCarousel data={recommendations} />
     </div>
   )
-}
+} */}
 
 
 {

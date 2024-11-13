@@ -15,8 +15,8 @@ const Menu = () => {
     const getData = async() => {
       const data = await fetch(Menu_API + resId)
       const json = await data.json()
-      // console.log(json.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards.slice(2,-2))
-      setMenuData(json.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards.slice(2,-2))
+      console.log(json)
+      setMenuData(json.data.cards[5].groupedCard.cardGroupMap.REGULAR.cards.slice(2,-2))
     }
 
 
